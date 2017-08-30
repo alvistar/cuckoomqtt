@@ -23,6 +23,7 @@ def on_message(client, userdata, message):
         if state is states.IDLE:
             state = states.CALC
             header = str(message.payload.decode("utf-8"))
+            nonce = 0
         
 HOST_NAME = "localhost"
 
